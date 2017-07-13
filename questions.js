@@ -115,37 +115,75 @@ var piratesQuestion5 = {
 
 
 var straightFactsQuestion1 = {
-    question: "",
+    question: "This is how much a human head weighs, unless you've got a ten head.",
     pointValue: 100,
     category: "Straight Facts",
-    correctAnswer: "",
-    answers: [""]
+    correctAnswer: "What is 10lbs?",
+    answers: ["What is 8lbs?", "What is 10lbs?", "What is 5lbs?", "What is 13lbs?"]
 }
-var straightFactsQuestion1 = {
-    question: "",
-    pointValue: 100,
+var straightFactsQuestion2 = {
+    question: "This famous radio personality is fan of the Squatty Potty.",
+    pointValue: 200,
     category: "Straight Facts",
-    correctAnswer: "",
-    answers: [""]
+    correctAnswer: "Who is Howard Stern?",
+    answers: ["Who is Howard Stern?", "Who is Charlamagne Tha God?", "Who is Bobby Bones?", "Who is Ryan Seacrest?"]
 }
-var straightFactsQuestion1 = {
-    question: "",
-    pointValue: 100,
+var straightFactsQuestion3 = {
+    question: "Since 1998, this is the world's busiest airport.",
+    pointValue: 300,
     category: "Straight Facts",
-    correctAnswer: "",
-    answers: [""]
+    correctAnswer: "What is Hartsfield-Jackson?",
+    answers: ["What is Hartsfield-Jackson?", "What is Beijing International?", "What is Los Angeles International?", "What is Heathrow?"]
 }
-var straightFactsQuestion1 = {
-    question: "",
-    pointValue: 100,
+var straightFactsQuestion4 = {
+    question: "Babies have 60 more of these than an adult.",
+    pointValue: 400,
     category: "Straight Facts",
-    correctAnswer: "",
-    answers: [""]
+    correctAnswer: "What is bones?",
+    answers: ["What is mucus membranes?", "What is bones?", "What is dermal layers?", "What is nerve-endings?"]
 }
-var straightFactsQuestion1 = {
-    question: "",
-    pointValue: 100,
+var straightFactsQuestion5 = {
+    question: "This person invented the toilet.",
+    pointValue: 500,
     category: "Straight Facts",
-    correctAnswer: "",
-    answers: [""]
+    correctAnswer: "Who is Thomas Crapper?",
+    answers: ["Who is Rudy Shite?", "Who is Seymore Butts?", "Who is Thomas Crapper?", "Who is Theodore Dingleberry?"]
+}
+
+
+
+var fuckemWeBallQuestion1 = {
+    question: "Michael Jordan started with the Hornets, crushed it with the Bulls, but this is where he ended his career.",
+    pointValue: 100,
+    category: "Fuckem, We Ball!",
+    correctAnswer: "What is the Wizards?",
+    answers: ["What is the Wizards?", "What is the Knicks?", "What is the Celtics?", "What is the Rockets?"]
+}
+var fuckemWeBallQuestion2 = {
+    question: "He was the first Carribean player to be inducted to the National Baseball Hall of Fame.",
+    pointValue: 100,
+    category: "Fuckem, We Ball!",
+    correctAnswer: "Who is Roberto Clemente?",
+    answers: ["Who is Hector Cruz?", "Who is Bernie Williams?", "Who is Roberto Clemente?", "Who is Alex Rodriguez?"]
+}
+var fuckemWeBallQuestion3 = {
+    question: "This guy is known as 'La Pulga' or a flea.",
+    pointValue: 300,
+    category: "Fuckem, We Ball!",
+    correctAnswer: "Who is Lionel Messi?",
+    answers: ["Who is Cristiano Ronaldo?", "Who is Neymar?", "Who is Lionel Messi?", "Who is Gerard Pique?"]
+}
+var fuckemWeBallQuestion4 = {
+    question: "In 1983, this Cowboy rushed 99 yards for a touchdown.",
+    pointValue: 400,
+    category: "Fuckem, We Ball!",
+    correctAnswer: "Who is Tony Dorsett?",
+    answers: ["Who is Tony Romo?", "Who is Tony Dorsett?", "Who is Deion Sanders?", "Who is Troy Aikman?"]
+}
+var fuckemWeBallQuestion5 = {
+    question: "This guy was the first black man on the cover of Vogue.",
+    pointValue: 500,
+    category: "Fuckem, We Ball!",
+    correctAnswer: "Who is Lebron James?",
+    answers: ["Who is Kobe Bryant?", "Who is Floyd Mayweather?", "Who is Muhammad Ali?", "Who is Lebron James?"]
 }
