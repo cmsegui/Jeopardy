@@ -57,7 +57,6 @@ var harryPotterQuestion3 = {
     correctAnswer: "What is Crucio?",
     answers: ["What is Inferius?", "What is Crucio?", "What is Accio?", "What is Horcrux?"]
 }
-
 var harryPotterQuestion4 = {
     question: "She was Voldemorts horcrux.",
     pointValue: 400,
@@ -72,6 +71,9 @@ var harryPotterQuestion5 = {
     correctAnswer: "What is Spinner's End?",
     answers: ["What is Spinner's End?", "What is Diagon Alley?", "What is Privet Drive?", "What is the Forbidden Forest?"]
 }
+
+
+
 var piratesQuestion1 = {
     question: "You have this quality you consider yourself a swashbuckler.",
     pointValue: 100,
@@ -80,9 +82,70 @@ var piratesQuestion1 = {
     answers: ["What is daring?", "What is scared?", "What is drunk?", "What is limber?"]
 }
 var piratesQuestion2 = {
-    question: "",
+    question: "This famous pirate has a Michael Bolton song as his moniker.",
+    pointValue: 200,
+    category: "Pirates",
+    correctAnswer: "Who is Captain Jack Sparrow?",
+    answers: ["Who is Captain Morgan?", "Who is Captain Blackbeard?", "Who is Captain Jack Sparrow?", "Who is Captain Calico Jack?"]
+}
+
+var piratesQuestion3 = {
+    question: "Blackbeards flag contained this.",
+    pointValue: 300,
+    category: "Pirates",
+    correctAnswer: "What is skull with horns?",
+    answers: ["What is skull and crossbones?", "What is skull with horns?", "What is skull with eyepatch?", "What is skull with beard?"]
+}
+var piratesQuestion4 = {
+    question: "This man started the Golden Age of Piracy.",
+    pointValue: 400,
+    category: "Pirates",
+    correctAnswer: "Who is Henry Avery?",
+    answers: ["Who is Charles Gibson?", "Who is Sam Bellamy?", "Who is Henry Avery?", "Who is Jack Rackham?"]
+}
+
+var piratesQuestion5 = {
+    question: "Pirates didn't really do this, well, except for William Kidd.",
     pointValue: 100,
     category: "Pirates",
+    correctAnswer: "What is bury treasure?",
+    answers: ["What is wear an eyepatch?", "What is bury treasure?", "What is say 'Arrrgh'?", "What is use Jolly Roger flag?"]
+}
+
+
+
+var straightFactsQuestion1 = {
+    question: "",
+    pointValue: 100,
+    category: "Straight Facts",
+    correctAnswer: "",
+    answers: [""]
+}
+var straightFactsQuestion1 = {
+    question: "",
+    pointValue: 100,
+    category: "Straight Facts",
+    correctAnswer: "",
+    answers: [""]
+}
+var straightFactsQuestion1 = {
+    question: "",
+    pointValue: 100,
+    category: "Straight Facts",
+    correctAnswer: "",
+    answers: [""]
+}
+var straightFactsQuestion1 = {
+    question: "",
+    pointValue: 100,
+    category: "Straight Facts",
+    correctAnswer: "",
+    answers: [""]
+}
+var straightFactsQuestion1 = {
+    question: "",
+    pointValue: 100,
+    category: "Straight Facts",
     correctAnswer: "",
     answers: [""]
 }
