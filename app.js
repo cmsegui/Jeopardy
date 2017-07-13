@@ -3,4 +3,3 @@ function questionClickHandler(category,score) {
     $("#myModal").modal();
 }
 
-
