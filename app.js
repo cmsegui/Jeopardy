@@ -1,27 +1,15 @@
-$(() => {
 function questionClickHandler(category,score) {
     console.log(questions[0].question);
     $('#question').text(questions[0].question);
 
 //using a for loop over the answers array output radio buttons for answers.
-    for(var i = 0; i < questions[0].answers; i++) {
-
-//markup is the radio button + the answer that its looping over       
-      let markup = '<input type="radio" name="answer" value="' + questions[0].answers[i] + '">' + questions[0].answers[i] + '<br>';
-      let radioButton = $(markup);
+    for(var i = 0; i < questions[0].answers.length; i++) {
+      let radioButton = $('<input type="radio" name="answer" value="' + questions[0].answers[i] + '">' + questions[0].answers[i] + '<br>');
       radioButton.appendTo('#answers');
+      console.log(questions[0].answers[i]);
     }
     $("#myModal").modal();
 }
-
-
-
-
-
- 
-
-
-
 
 
 const questions = [
@@ -201,4 +189,4 @@ const questions = [
         answers: ["Who is Kobe Bryant?", "Who is Floyd Mayweather?", "Who is Muhammad Ali?", "Who is Lebron James?"]
     }
 ];
-});
+
