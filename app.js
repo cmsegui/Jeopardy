@@ -1,18 +1,22 @@
 function questionClickHandler(category,score) {
     console.log(questions[0].question);
     $('#question').text(questions[0].question);
+
+//using a for loop over the answers array output radio buttons for answers.
     for(var i = 0; i < questions[0].answers; i++) {
-      $('#answers').text(questions[0].answers);
+
+//markup is the radio button + the answer that its looping over       
+      let markup = '<input type="radio" name="answer" value="' + questions[0].answers[i] + '">' + questions[0].answers[i] + '<br>';
+      let radioButton = $(markup);
+      radioButton.appendTo('#answers');
     }
     $("#myModal").modal();
 }
 
-//grab the answers element 
-//$('#answers')
 
-//using a for loop over the answers array output radio buttons for answers.
 
-//$('#answers').checked = 
+
+
  
 
 
@@ -31,7 +35,7 @@ const questions = [
         question: "In 2010, Birdman signed him...it was a MAJOR deal.",
         pointValue: 200,
         category: "Cash Money",
-        correctAnswer: ["Who is D.J. Khaled?"],
+        correctAnswer: "Who is D.J. Khaled?",
         answers: ["Who is Master P?", "Who is D.J. Khaled?", "Who is Mystikal?", "Who are the Hot Boyz?"]
     },
     {
