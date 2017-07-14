@@ -14,5 +14,6 @@
 }
 
 body {
-    background-color: rgb(18, 14, 140)
+    background-image: url('http://i.imgur.com/5HTYYO9.jpg');
+    background-size: cover;
 }

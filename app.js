@@ -1,3 +1,4 @@
+$(() => {
 function questionClickHandler(category,score) {
     console.log(questions[0].question);
     $('#question').text(questions[0].question);
@@ -200,4 +201,4 @@ const questions = [
         answers: ["Who is Kobe Bryant?", "Who is Floyd Mayweather?", "Who is Muhammad Ali?", "Who is Lebron James?"]
     }
 ];
-
+});
