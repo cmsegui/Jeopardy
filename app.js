@@ -1,8 +1,23 @@
 function questionClickHandler(category,score) {
     console.log(questions[0].question);
     $('#question').text(questions[0].question);
+    for(var i = 0; i < questions[0].answers; i++) {
+      $('#answers').text(questions[0].answers);
+    }
     $("#myModal").modal();
 }
+
+//grab the answers element 
+//$('#answers')
+
+//using a for loop over the answers array output radio buttons for answers.
+
+//$('#answers').checked = 
+ 
+
+
+
+
 
 const questions = [
     {
