@@ -1,19 +1,28 @@
-.container {
-    height: 90px;
-}
-
 .row {
     height: 90px;
 }
-.col-xs-2 {
+.scorevalue {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 26px;
-    color: rgb(255,215,0)
-
+    font-size: 32px;
+    font-weight: 900;
+    color: rgb(255,215,0);
 }
 
 body {
-    background-image: url('http://i.imgur.com/5HTYYO9.jpg');
+    background-image: url('http://i.imgur.com/KCY2bWl.png');
     background-size: cover;
+    color: white;
+    font-family: Palatino Linotype, Palatino, serif;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.scoreboard {
+    text-align: right;
+    font-size: 40px;
+}
+
+.categories {
+font-size: 30px;
+text-align: center;
 }
