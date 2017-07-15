@@ -1,4 +1,13 @@
-function questionClickHandler(category, score) {
+//make variable showing # of questions clicked. 
+let questionsClicked = 0;
+let totalQuestions = 25;
+
+function questionClickHandler(element, category, score) {
+    //remove point value of where they clicked and disable text.
+    $(element).text('').off('');
+    //increment everytime they click on a question.
+    questionsClicked++;
+    
     let foundQuestion = questionsFinder(category, score);
     $('#question').text(foundQuestion.question);
 
@@ -9,13 +18,23 @@ function questionClickHandler(category, score) {
     for(var i = 0; i < foundQuestion.answers.length; i++) {
       let radioButton = $('<input type="radio" name="answer" value="' + i + '">' + foundQuestion.answers[i] + '<br>');
       radioButton.appendTo('#answers');
-      console.log('<input type="radio" name="answer" value="' + i + '">hello');
+     // console.log('<input type="radio" name="answer" value="' + i + '">hello');
     }
     $("#myModal").modal();
 }
+function submitAnswer() {
+    $('#answerResults').text('blah');
+
+
+
+    //if that value is === 25 then game over.
+    if (questionsClicked === totalQuestions) {
+        gameOver();
+    }
+}
+
 
 //write a function that finds question based on the category/point value using a for loop over your questions.
-
 function questionsFinder(category, pointValue) {
   for(var i = 0; i < questions.length; i++) {
       let currentQuestion = questions[i];
@@ -25,6 +44,17 @@ function questionsFinder(category, pointValue) {
   }
   console.error('question not found');
 }
+function gameOver() {
+    alert('GAME OVER!!!! LOSER!');
+}
+ 
+
+
+
+
+
+//make a variable for total score.
+
 
 
 

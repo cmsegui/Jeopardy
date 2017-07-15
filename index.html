@@ -43,51 +43,51 @@
     
         <div class="row">
             <div class="col-xs-1"></div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Cash Money',100);">100</div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Harry Potter',100);">100</div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Pirates',100);">100</div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Straight Facts',100);">100</div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Fuckem, We Ball!',100);">100</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Cash Money',100);">100</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Harry Potter',100);">100</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Pirates',100);">100</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Straight Facts',100);">100</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Fuckem, We Ball!',100);">100</div>
             <div class="col-xs-1"></div>
         </div>
    
         <div class="row">
             <div class="col-xs-1"></div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Cash Money',200);">200</div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Harry Potter',200);">200</div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Pirates',200);">200</div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Straight Facts',200);">200</div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Fuckem, We Ball!',200);">200</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Cash Money',200);">200</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Harry Potter',200);">200</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Pirates',200);">200</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Straight Facts',200);">200</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Fuckem, We Ball!',200);">200</div>
             <div class="col-xs-1"></div>
         </div>
    
         <div class="row">
             <div class="col-xs-1"></div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Cash Money',300);">300</div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Harry Potter',300);">300</div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Pirates',300);">300</div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Straight Facts',300);">300</div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Fuckem, We Ball!',300);">300</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Cash Money',300);">300</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Harry Potter',300);">300</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Pirates',300);">300</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Straight Facts',300);">300</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Fuckem, We Ball!',300);">300</div>
             <div class="col-xs-1"></div>
         </div>
    
         <div class="row">
             <div class="col-xs-1"></div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Cash Money',400);">400</div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Harry Potter',400);">400</div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Pirates',400);">400</div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Straight Facts',400);">400</div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Fuckem, We Ball!',400);">400</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Cash Money',400);">400</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Harry Potter',400);">400</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Pirates',400);">400</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Straight Facts',400);">400</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Fuckem, We Ball!',400);">400</div>
             <div class="col-xs-1"></div>
         </div>
    
         <div class="row">
             <div class="col-xs-1"></div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Cash Money',500);">500</div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Harry Potter',500);">500</div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Pirates',500);">500</div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Straight Facts',500);">500</div>
-            <div class="col-xs-2 scorevalue" onclick="questionClickHandler('Fuckem, We Ball!',500);">500</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Cash Money',500);">500</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Harry Potter',500);">500</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Pirates',500);">500</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Straight Facts',500);">500</div>
+            <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Fuckem, We Ball!',500);">500</div>
             <div class="col-xs-1"></div>
         </div>
     </div>
@@ -103,11 +103,13 @@
       </div>
       <div class="modal-body">
 
-        <p id="answers"></p>
+        <div id="answers"></div>
+
+        <div id="answerResults"></div>
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Submit Answer</button>
+        <button type="button" class="btn btn-primary" onclick="submitAnswer();">Submit Answer</button>
       </div>
     </div>
   </div>

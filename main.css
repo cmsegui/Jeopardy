@@ -6,15 +6,18 @@
     font-size: 32px;
     font-weight: 900;
     color: rgb(255,215,0);
+    box-sizing: border-box;
+    border: 2px solid black;
 }
 
 body {
     background-image: url('http://i.imgur.com/KCY2bWl.png');
     background-size: cover;
     color: white;
-    font-family: Palatino Linotype, Palatino, serif;
+    font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 900;
     font-size: 16px;
+    
 }
 
 .scoreboard {
@@ -23,6 +26,15 @@ body {
 }
 
 .categories {
-font-size: 30px;
-text-align: center;
+    font-size: 30px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#myModal {
+    color: black;
+}
+
+#question {
+    font-size: 20px;
 }
