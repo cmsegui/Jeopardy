@@ -18,6 +18,8 @@ function questionClickHandler(element, category, score) {
     //use a for loop over the answers array output radio buttons for answers.
     for(var i = 0; i < foundQuestion.answers.length; i++) {
       let radioButton = $('<input type="radio" name="answer" value="' + i + '">' + foundQuestion.answers[i] + '<br>');
+    //enabled submit button when answer is clicked (on html the button is already disabled)  
+      radioButton.click(function () { $('#submitAnswer').prop('disabled', false)});
       radioButton.appendTo('#answers');
      // console.log('<input type="radio" name="answer" value="' + i + '">hello');
     }
@@ -27,7 +29,6 @@ function submitAnswer() {
     $('#answerResults').text('');
     $('input[name=answer]:checked').val();
 
-//disable submit button by default -- add to each radio button 
 
 //add clickhandler to radio button that enable submit answer
 
