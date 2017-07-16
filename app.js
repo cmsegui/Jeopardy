@@ -13,12 +13,14 @@ function questionClickHandler(element, category, score) {
     //reset correct answer
     correctAnswer = -1;
     currentPointValue = 0;
+    $('#answerResults').text('');
     
     let foundQuestion = questionsFinder(category, score);
     //remember correct answer
     correctAnswer = foundQuestion.correctAnswer;
     currentPointValue = foundQuestion.pointValue;
     $('#question').text(foundQuestion.question);
+
 
 
     //clear answers
@@ -41,12 +43,15 @@ function submitAnswer() {
     let checkedAnswer = $('input[name=answer]:checked').val();
     if (checkedAnswer === correctAnswer + '') {
         score = score + currentPointValue;
+        $('#answerResults').text('YAY! That is correct!');
     }
     else {
         score = score - currentPointValue;
+        $('#answerResults').text('Go read a book, you illiterate son of a bitch!');
     }
     console.log(score);
     $('#currentScore').text(score);
+
 
 
 
