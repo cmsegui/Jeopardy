@@ -190,7 +190,7 @@ const questions = [
     },
     {
         question: "Pirates didn't really do this, well, except for William Kidd.",
-        pointValue: 100,
+        pointValue: 500,
         category: "Pirates",
         correctAnswer: 1,
         answers: ["What is wear an eyepatch?", "What is bury treasure?", "What is say 'Arrrgh'?", "What is use Jolly Roger flag?"]
