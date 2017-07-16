@@ -23,7 +23,7 @@ function questionClickHandler(element, category, score) {
     $("#myModal").modal();
 }
 function submitAnswer() {
-    $('#answerResults').text('blah');
+    $('#answerResults').text('');
 
 
 
