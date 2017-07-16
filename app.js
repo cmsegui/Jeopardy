@@ -1,6 +1,7 @@
 //make variable showing # of questions clicked. 
 let questionsClicked = 0;
 let totalQuestions = 25;
+let score = 0;
 
 function questionClickHandler(element, category, score) {
     //remove point value of where they clicked and disable text.
@@ -24,6 +25,13 @@ function questionClickHandler(element, category, score) {
 }
 function submitAnswer() {
     $('#answerResults').text('');
+    $('input[name=answer]:checked').val();
+
+//disable submit button by default -- add to each radio button 
+
+//add clickhandler to radio button that enable submit answer
+
+
 
 
 
@@ -45,7 +53,7 @@ function questionsFinder(category, pointValue) {
   console.error('question not found');
 }
 function gameOver() {
-    alert('GAME OVER!!!! LOSER!');
+    alert('GAME OVER!!!!');
 }
  
 
