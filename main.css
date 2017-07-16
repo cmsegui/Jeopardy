@@ -42,6 +42,11 @@ body {
     min-block-size: 30%;
 }
 
-.game-over {
+h3 {
     color: black;
+    text-align: center;
+}
+.finalScore {
+    color: black;
+    text-align: center;
 }
