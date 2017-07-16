@@ -46,6 +46,7 @@ function submitAnswer() {
         score = score - currentPointValue;
     }
     console.log(score);
+    $('#currentScore').text(score);
 
 
 
