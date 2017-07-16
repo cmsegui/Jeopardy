@@ -23,7 +23,7 @@
                 </div>
                 <div class="col-xs-6" "title">
                     <div class="scoreboard">
-                        <span>SCORE: </span> <span id="currentScore">O</span>
+                        <span>SCORE: </span> <span class="currentScore">O</span>
                     </div>
                 </div> 
             </div>
@@ -93,29 +93,50 @@
     </div>
 
     <div class="modal fade" id="myModal">
-    <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="question"></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="question"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div>
-      <div class="modal-body">
+                </div>
+                <div class="modal-body">
 
-        <div id="answers"></div>
+                    <div id="answers"></div>
 
-        <div id="answerResults"></div>
+                    <div id="answerResults"></div>
 
-      </div>
-      <div class="modal-footer">
-        <button type="button" disabled id="submitAnswer"
-                class="btn btn-primary" onclick="submitAnswer();">Submit Answer</button>
-      </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" disabled id="submitAnswer" class="btn btn-primary" onclick="submitAnswer();">Submit Answer</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
     
+    <div class="modal fade" "game-over" id="gameOverModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="question"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <div><h3>Game Over</h3></div>
+                    <div>Your Final Score Is <span class="currentScore">O</span> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
    <script src="app.js"></script>
     </body>
 

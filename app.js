@@ -1,6 +1,6 @@
 //make variable showing # of questions clicked. 
 let questionsClicked = 0;
-let totalQuestions = 25;
+let totalQuestions = 2;
 let score = 0;
 let correctAnswer = -1;
 let currentPointValue = 0;
@@ -27,12 +27,16 @@ function questionClickHandler(element, category, score) {
     $('#answers').empty();
 
     //use a for loop over the answers array output radio buttons for answers.
-    for(var i = 0; i < foundQuestion.answers.length; i++) {
-      let radioButton = $('<input type="radio" name="answer" value="' + i + '">' + foundQuestion.answers[i] + '<br>');
-    //enabled submit button when answer is clicked (on html the button is already disabled)  
-      radioButton.click(function () { $('#submitAnswer').prop('disabled', false)});
-      radioButton.appendTo('#answers');
-     // console.log('<input type="radio" name="answer" value="' + i + '">hello');
+    for (var i = 0; i < foundQuestion.answers.length; i++) {
+        let radioButton = $('<input type="radio" id="answer" name="answer" value="' + i + '">' + foundQuestion.answers[i] + '<br>');
+        //enabled submit button when answer is clicked (on html the button is already disabled)  
+        radioButton.click(function () {
+            $('#submitAnswer').prop('disabled', false);
+            $('#answer').prop('disabled', false);
+
+        });
+        radioButton.appendTo('#answers');
+        // console.log('<input type="radio" name="answer" value="' + i + '">hello');
     }
     $("#myModal").modal();
 }
@@ -50,13 +54,7 @@ function submitAnswer() {
         $('#answerResults').text('Go read a book, you illiterate son of a bitch!');
     }
     console.log(score);
-    $('#currentScore').text(score);
-
-
-
-
-
-
+    $('.currentScore').text(score);
     //if that value is === 25 then game over.
     if (questionsClicked === totalQuestions) {
         gameOver();
@@ -74,8 +72,11 @@ function questionsFinder(category, pointValue) {
   }
   console.error('question not found');
 }
+
+
 function gameOver() {
-    alert('GAME OVER!!!!');
+    $("#myModal").modal('toggle');
+    $("#gameOverModal").modal();
 }
  
 

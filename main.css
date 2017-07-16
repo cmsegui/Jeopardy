@@ -37,6 +37,11 @@ body {
 #question {
     font-size: 20px;
 }
+
 .title {
     min-block-size: 30%;
+}
+
+.game-over {
+    color: black;
 }
