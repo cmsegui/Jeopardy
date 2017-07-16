@@ -3,6 +3,7 @@ let questionsClicked = 0;
 let totalQuestions = 25;
 let score = 0;
 let correctAnswer = -1;
+let currentPointValue = 0;
 
 function questionClickHandler(element, category, score) {
     //remove point value of where they clicked and disable text.
@@ -11,11 +12,14 @@ function questionClickHandler(element, category, score) {
     questionsClicked++;
     //reset correct answer
     correctAnswer = -1;
+    currentPointValue = 0;
     
     let foundQuestion = questionsFinder(category, score);
     //remember correct answer
     correctAnswer = foundQuestion.correctAnswer;
+    currentPointValue = foundQuestion.pointValue;
     $('#question').text(foundQuestion.question);
+
 
     //clear answers
     $('#answers').empty();
@@ -35,14 +39,13 @@ function questionClickHandler(element, category, score) {
 function submitAnswer() {
     $('#answerResults').text('');
     let checkedAnswer = $('input[name=answer]:checked').val();
-    console.log(correctAnswer, checkedAnswer);
     if (checkedAnswer === correctAnswer + '') {
-        console.log('yay!');
+        score = score + currentPointValue;
     }
     else {
-        console.log('booo');
+        score = score - currentPointValue;
     }
-
+    console.log(score);
 
 
 
