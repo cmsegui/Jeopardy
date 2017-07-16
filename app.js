@@ -1,6 +1,5 @@
-//make variable showing # of questions clicked. 
 let questionsClicked = 0;
-let totalQuestions = 2;
+let totalQuestions = 25;
 let score = 0;
 let correctAnswer = -1;
 let currentPointValue = 0;
@@ -21,19 +20,17 @@ function questionClickHandler(element, category, score) {
     currentPointValue = foundQuestion.pointValue;
     $('#question').text(foundQuestion.question);
 
-
-
     //clear answers
     $('#answers').empty();
 
     //use a for loop over the answers array output radio buttons for answers.
     for (var i = 0; i < foundQuestion.answers.length; i++) {
-        let radioButton = $('<input type="radio" id="answer" name="answer" value="' + i + '">' + foundQuestion.answers[i] + '<br>');
+        let radioButton = $('<input type="radio" class="answer" name="answer" value="' + i + '">' + foundQuestion.answers[i] + '<br>');
         //enabled submit button when answer is clicked (on html the button is already disabled)  
         radioButton.click(function () {
             $('#submitAnswer').prop('disabled', false);
-            $('#answer').prop('disabled', false);
-
+            console.log('working?');
+            $('.answer').attr('disabled', true);
         });
         radioButton.appendTo('#answers');
         // console.log('<input type="radio" name="answer" value="' + i + '">hello');
@@ -61,7 +58,6 @@ function submitAnswer() {
     }
 }
 
-
 //write a function that finds question based on the category/point value using a for loop over your questions.
 function questionsFinder(category, pointValue) {
   for(var i = 0; i < questions.length; i++) {
@@ -70,23 +66,13 @@ function questionsFinder(category, pointValue) {
           return currentQuestion;
       }
   }
-  console.error('question not found');
+  //console.error('question not found');
 }
-
 
 function gameOver() {
     $("#myModal").modal('toggle');
     $("#gameOverModal").modal();
 }
- 
-
-
-
-
-
-
-
-
 
 
 const questions = [
