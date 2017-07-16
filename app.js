@@ -2,14 +2,19 @@
 let questionsClicked = 0;
 let totalQuestions = 25;
 let score = 0;
+let correctAnswer = -1;
 
 function questionClickHandler(element, category, score) {
     //remove point value of where they clicked and disable text.
     $(element).text('').off('');
     //increment everytime they click on a question.
     questionsClicked++;
+    //reset correct answer
+    correctAnswer = -1;
     
     let foundQuestion = questionsFinder(category, score);
+    //remember correct answer
+    correctAnswer = foundQuestion.correctAnswer;
     $('#question').text(foundQuestion.question);
 
     //clear answers
@@ -25,12 +30,19 @@ function questionClickHandler(element, category, score) {
     }
     $("#myModal").modal();
 }
+
+
 function submitAnswer() {
     $('#answerResults').text('');
-    $('input[name=answer]:checked').val();
+    let checkedAnswer = $('input[name=answer]:checked').val();
+    console.log(correctAnswer, checkedAnswer);
+    if (checkedAnswer === correctAnswer + '') {
+        console.log('yay!');
+    }
+    else {
+        console.log('booo');
+    }
 
-
-//add clickhandler to radio button that enable submit answer
 
 
 
@@ -58,11 +70,6 @@ function gameOver() {
 }
  
 
-
-
-
-
-//make a variable for total score.
 
 
 
