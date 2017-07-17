@@ -1,19 +1,21 @@
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
-        </script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="main.css">
-        
-    </head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
 
-    <body>
+        </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
 
     <div class="header">
         <div class="container">
@@ -25,14 +27,14 @@
                     <div class="scoreboard">
                         <span>SCORE: </span> <span class="currentScore">O</span>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
     </div>
 
     <div class="container">
         <div class="row categories">
-            <div class="col-xs-1"></div> 
+            <div class="col-xs-1"></div>
             <div class="col-xs-2">Cash<br>Money</div>
             <div class="col-xs-2">Harry<br>Potter</div>
             <div class="col-xs-2">Pirates</div>
@@ -40,7 +42,7 @@
             <div class="col-xs-2">Fuckem,<br>We Ball!</div>
             <div class="col-xs-1"></div>
         </div>
-    
+
         <div class="row">
             <div class="col-xs-1"></div>
             <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Cash Money',100);">100</div>
@@ -50,7 +52,7 @@
             <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Fuckem, We Ball!',100);">100</div>
             <div class="col-xs-1"></div>
         </div>
-   
+
         <div class="row">
             <div class="col-xs-1"></div>
             <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Cash Money',200);">200</div>
@@ -60,7 +62,7 @@
             <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Fuckem, We Ball!',200);">200</div>
             <div class="col-xs-1"></div>
         </div>
-   
+
         <div class="row">
             <div class="col-xs-1"></div>
             <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Cash Money',300);">300</div>
@@ -70,7 +72,7 @@
             <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Fuckem, We Ball!',300);">300</div>
             <div class="col-xs-1"></div>
         </div>
-   
+
         <div class="row">
             <div class="col-xs-1"></div>
             <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Cash Money',400);">400</div>
@@ -80,7 +82,7 @@
             <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Fuckem, We Ball!',400);">400</div>
             <div class="col-xs-1"></div>
         </div>
-   
+
         <div class="row">
             <div class="col-xs-1"></div>
             <div class="col-xs-2 scorevalue" onclick="questionClickHandler(this, 'Cash Money',500);">500</div>
@@ -114,7 +116,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="modal fade" "game-over" id="gameOverModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -125,13 +127,15 @@
         </button>
                 </div>
                 <div class="modal-body">
-                    <div><h3>Game Over</h3></div>
+                    <div>
+                        <h3>Game Over</h3>
+                    </div>
                     <div class="finalScore">Your Final Score Is <span class="currentScore">O</span> </div>
                 </div>
             </div>
         </div>
     </div>
-   <script src="app.js"></script>
-    </body>
+    <script src="app.js"></script>
+</body>
 
 </html>

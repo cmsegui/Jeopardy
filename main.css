@@ -1,6 +1,7 @@
 .row {
     height: 90px;
 }
+
 .scorevalue {
     text-align: center;
     font-size: 32px;
@@ -28,6 +29,7 @@ body {
     font-size: 30px;
     text-align: center;
     box-sizing: border-box;
+    
 }
 
 #myModal {
@@ -39,7 +41,7 @@ body {
 }
 
 .title {
-    min-block-size: 30%;
+    min-block-size: 50%;
 }
 
 h3 {
@@ -49,4 +51,11 @@ h3 {
 .finalScore {
     color: black;
     text-align: center;
+}
+
+.incorrect {
+    background-color: #FAA;
+}
+.correct {
+    background-color: #b3f7ad;
 }

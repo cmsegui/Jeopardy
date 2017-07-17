@@ -9,15 +9,19 @@ function questionClickHandler(element, category, score) {
     $(element).text('').off('');
     //increment everytime they click on a question.
     questionsClicked++;
-    //reset correct answer
+    //reset correct answer so we can use it in submit answer function(have to start at -1 to make sure its not answer in array)
     correctAnswer = -1;
+    //reset point value - same as above.
     currentPointValue = 0;
+    //clearing the result of answer whether they got it right or wrong.
     $('#answerResults').text('');
-    
+
+    //assigned foundQuestion the questionsFinder function.
     let foundQuestion = questionsFinder(category, score);
-    //remember correct answer
+    //remember correct answer.  setting correct answer and point value for later.
     correctAnswer = foundQuestion.correctAnswer;
     currentPointValue = foundQuestion.pointValue;
+    //setting text to questoin property in foundQuestion.
     $('#question').text(foundQuestion.question);
 
     //clear answers
@@ -29,7 +33,7 @@ function questionClickHandler(element, category, score) {
         //enabled submit button when answer is clicked (on html the button is already disabled)  
         radioButton.click(function () {
             $('#submitAnswer').prop('disabled', false);
-            console.log('working?');
+            //console.log('working?');
             $('.answer').attr('disabled', true);
         });
         radioButton.appendTo('#answers');
@@ -50,7 +54,7 @@ function submitAnswer() {
         score = score - currentPointValue;
         $('#answerResults').text('Go read a book, you illiterate son of a bitch!');
     }
-    console.log(score);
+    //console.log(score);
     $('.currentScore').text(score);
     //if that value is === 25 then game over.
     if (questionsClicked === totalQuestions) {
@@ -60,13 +64,13 @@ function submitAnswer() {
 
 //write a function that finds question based on the category/point value using a for loop over your questions.
 function questionsFinder(category, pointValue) {
-  for(var i = 0; i < questions.length; i++) {
-      let currentQuestion = questions[i];
-      if (currentQuestion.category === category && currentQuestion.pointValue === pointValue) {
-          return currentQuestion;
-      }
-  }
-  //console.error('question not found');
+    for (var i = 0; i < questions.length; i++) {
+        let currentQuestion = questions[i];
+        if (currentQuestion.category === category && currentQuestion.pointValue === pointValue) {
+            return currentQuestion;
+        }
+    }
+    //console.error('question not found');
 }
 
 function gameOver() {
