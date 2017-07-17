@@ -10,8 +10,8 @@ Live site:
 
 Technologies Used:
 Languages - HTML5, CSS, JavaScript, jQuery
-Design - Bootstrap
-Project Planning and User Stories - 
+Design - Twitter Bootstrap
+Project Planning and User Stories - https://trello.com/b/oycWp5t5/jeopardy
 Editor - VS Code
 
 Features:
@@ -20,6 +20,7 @@ Features:
 -Right/Wrong answer notifications
 -Final Score tally
 
-Wireframe:
+Wireframe:  http://imgur.com/3rmaZr8
 
 Future Development:
+I'd like to add daily double questions, a Round 2, music when first logging into the site and also to keep time while answering question.  I'd also do a lot more styling.
