@@ -17,9 +17,9 @@ Project Planning and User Stories - https://trello.com/b/oycWp5t5/jeopardy
 Editor - VS Code
 
 <h3>Features:</h3>
--Modals
--Scoreboard
--Right/Wrong answer notifications
+-Modals<br>
+-Scoreboard <br>
+-Right/Wrong answer notifications <br>
 -Final Score tally
 
 <h3>Wireframe:</h3>http://imgur.com/3rmaZr8
