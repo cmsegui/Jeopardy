@@ -52,7 +52,7 @@ function submitAnswer() {
     }
     else {
         score = score - currentPointValue;
-        $('#answerResults').text('Go read a book, you illiterate son of a bitch!');
+        $('#answerResults').text('WOMP! Maybe next time!');
     }
     //console.log(score);
     $('.currentScore').text(score);
