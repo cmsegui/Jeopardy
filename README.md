@@ -1,6 +1,6 @@
 <h1>JEOPARDY</h1>
 
-<img src="https://i.imgur.com/45545PZ.png">
+<img src="https://i.imgur.com/cHS7oh0m.png">
 
 <h3>Overview:</h3>
 
